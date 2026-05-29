@@ -21,7 +21,7 @@ class Zashboard {
     if (_server == null) {
       try {
         _server = await HttpServer.bind(
-          "127.0.0.1",
+          "0.0.0.0",
           SettingManager.getConfig().htmlBoardPort,
         );
       } catch (err, stacktrace) {
